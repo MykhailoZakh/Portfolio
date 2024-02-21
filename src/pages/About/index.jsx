@@ -1,4 +1,6 @@
+import {Carousel} from "flowbite-react";
 import "./home.css";
+import ProjectCarousel from "../../components/Carousel";
 export default function About() {
   return (
     <>
@@ -19,13 +21,14 @@ export default function About() {
           </p>
 
           <div className="btn-box">
-            <a href="/portfolio" className="btn">
-              My Projects
+            <a href="/resume" className="btn">
+              My Resume
             </a>
           </div>
         </div>
         <div className="home-img"></div>
       </section>
+      <ProjectCarousel />
     </>
   );
 }

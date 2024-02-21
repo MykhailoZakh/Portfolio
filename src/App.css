@@ -9,7 +9,9 @@
 body {
   background-color: #081b29;
 }
-
+.nav {
+  z-index: 4;
+}
 .footerIco {
   margin-top: 20px;
   height: 50px;
@@ -29,4 +31,54 @@ body {
 }
 .footer {
   margin-top: auto;
+}
+.second-home {
+  background-color: var(--second-bg-color);
+  min-height: 115vh;
+}
+.h3-project {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #00abf0;
+  text-align: center;
+  /* -webkit-text-stroke: 0.7px #00abf0; */
+}
+.carusel {
+  height: 40rem;
+}
+.img-carusel {
+  height: 100%;
+}
+@media (max-width: 1300px) {
+  .carusel {
+    height: 30rem;
+  }
+  .second-home {
+    min-height: 95vh;
+  }
+  .h3-project {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1000px) {
+  .carusel {
+    height: 26rem;
+  }
+  .second-home {
+    min-height: 90vh;
+  }
+  .h3-project {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .carusel {
+    height: 18rem;
+  }
+  .second-home {
+    min-height: 81vh;
+  }
+  .h3-project {
+    font-size: 2.6rem;
+  }
 }

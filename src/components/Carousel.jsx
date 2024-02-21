@@ -1,34 +1,26 @@
-import React from "react";
-import {Carousel} from "antd";
-const contentStyle = {
-  margin: 0,
-  height: "160px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
-const CarouselHero = () => {
-  const onChange = (currentSlide) => {
-    console.log(currentSlide);
-  };
+import {Carousel} from "flowbite-react";
+import data from "../assets/projects";
+export default function Contact() {
+  console.log(data[0].projectArr);
   return (
-    <article id="carousel">
-      <Carousel autoplay afterChange={onChange}>
-        <div>
-          <h3 style={contentStyle}>1</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>2</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>3</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>4</h3>
-        </div>
-      </Carousel>
-    </article>
+    <section className=" second-home ">
+      <h3 className="h3-project mb-10">Project preview</h3>
+      <div className="h-64 carusel ">
+        <Carousel slideInterval={3000}>
+          {data[0].projectArr.map((img) => (
+            <img
+              key={img.key}
+              src={`/bgImg/${img.bgImage}`}
+              className="img-carusel"
+            ></img>
+          ))}
+        </Carousel>
+      </div>
+      <div className="btn-box">
+        <a href="/portfolio" className="btn mt-8">
+          All Projects
+        </a>
+      </div>
+    </section>
   );
-};
-export default CarouselHero;
+}
