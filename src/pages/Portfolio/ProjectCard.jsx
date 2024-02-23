@@ -22,7 +22,7 @@ export default function ProjectCard({data}) {
       <h4 className="header text-lime-200">Notable Features</h4>
       <ul className="text-normal font-normal text-gray-200 list-disc  list-inside border-b border-lime-200 ">
         {data.features.map((feature) => (
-          <li>{feature}</li>
+          <li key={Math.floor(Math.random() * 10000)}>{feature}</li>
         ))}
       </ul>
       <h4 className=" header text-lime-200">Technologies Used</h4>
