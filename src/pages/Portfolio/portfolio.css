@@ -156,7 +156,13 @@
 }
 @media (max-width: 570px) {
   .project-card {
-    min-width: 20rem;
+    min-width: 15rem;
     min-height: 10rem;
+  }
+  .object-cover {
+    min-width: 18rem;
+  }
+  .icons {
+    height: 40px;
   }
 }

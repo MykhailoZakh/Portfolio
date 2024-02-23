@@ -1,5 +1,16 @@
 const frontData = [
     {
+        key: 6,
+        name: 'Travel-Mate',
+        gitLink: 'https://github.com/rhemlock7/TeamSync-KanBan?tab=readme-ov-file',
+        smallDesc: "Task manager designed to help developers organize and manage their tasks effectively using the Kanban methodology ",
+        icons: ['react.svg', 'vite.svg', 'tailwind.svg', 'redux.svg', 'css.svg', 'mongo.svg', 'mongoose.png', 'js.svg', 'node.svg', 'github.svg'],
+        bgImage: 'teamsync.jpg',
+        role: 'Created Queries, Mutations and Modules for Back-end structure and added it to the Front-end',
+        features: ['Log In, Sign Up', 'User authentication', `User's ability to create new Projects and add to it ToDoes`, `Ability to add multiple users to one project`],
+        liveLink: 'https://teamsync-client-project-3.netlify.app/'
+    },
+    {
         key: 1,
         name: 'Travel-Mate',
         gitLink: 'https://github.com/MykhailoZakh/Travel-Mate',

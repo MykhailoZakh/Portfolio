@@ -39,8 +39,8 @@ export default function ProjectCard({data}) {
         <a className="project-btn mr-4" href={`${data.gitLink}`}>
           <FaGithub className="btn-ico" /> <span>GitHub Repository</span>
         </a>
-        {data.live && (
-          <a className="project-btn" href={`${data.live}`}>
+        {data.liveLink && (
+          <a className="project-btn" href={`${data.liveLink}`}>
             <MdOnlinePrediction className="btn-ico" />{" "}
             <span>Deployed Website</span>
           </a>

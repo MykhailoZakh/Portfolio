@@ -4,11 +4,7 @@ import {Document, Page} from "react-pdf";
 const Resume = () => {
   return (
     <article className="mt-24">
-      <object
-        className="pdf"
-        type="application/pdf"
-        data="./Mykhailo Zakharkiv Resume - Web Development.pdf"
-      >
+      <object className="pdf" type="application/pdf" data="./resume.pdf">
         <img src="./resume-new.jpg" className="pdf-img" />
         <p className="d-flex justify-content-around ">
           <a
