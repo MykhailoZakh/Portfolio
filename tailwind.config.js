@@ -6,7 +6,11 @@ export default {
     'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      listStyleImage: {
+        gear: 'url("/public/gear.svg")',
+      },
+    },
   },
   plugins: [require('flowbite/plugin'),],
 }

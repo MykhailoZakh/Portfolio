@@ -8,10 +8,11 @@ export default function Portfolio() {
   return (
     <article className="project-container flex  justify-center">
       <div>
+        <h2 className="main-h text-center">Portfolio</h2>
         {frontData.map((project) => (
           <ProjectCard key={project.key} data={project} />
         ))}
-        <h2>Back-End Projects</h2>
+        <h2 className="main-h text-center ">Back-End Projects</h2>
         {backData.map((project) => (
           <ProjectCard key={project.key} data={project} />
         ))}

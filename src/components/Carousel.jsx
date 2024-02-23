@@ -1,16 +1,17 @@
 import {Carousel} from "flowbite-react";
 import data from "../assets/projects";
+import frontData from "../assets/fullProjects";
 export default function Contact() {
   console.log(data[0].projectArr);
   return (
     <section className=" second-home ">
-      <h3 className="h3-project mb-10">Project preview</h3>
+      <h3 className="h3-project mb-10">Projects preview</h3>
       <div className="h-64 carusel ">
         <Carousel slideInterval={3000}>
-          {data[0].projectArr.map((img) => (
+          {frontData.map((project) => (
             <img
-              key={img.key}
-              src={`/bgImg/${img.bgImage}`}
+              key={project.key}
+              src={`/bgImg/${project.bgImage}`}
               className="img-carusel"
             ></img>
           ))}
@@ -18,7 +19,7 @@ export default function Contact() {
       </div>
       <div className="btn-box">
         <a href="/portfolio" className="btn mt-8">
-          All Projects
+          View Projects
         </a>
       </div>
     </section>
