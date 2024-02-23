@@ -13,12 +13,7 @@ export default function About() {
             <h3>Software Developer</h3>
           </div>
 
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            quidem amet vel, voluptas earum velit pariatur modi nihil quasi
-            dignissimos nam asperiores officiis quam explicabo at quia
-            consequuntur culpa magni.
-          </p>
+          <p>Turning ideas into real life products</p>
 
           <div className="btn-box">
             <a href="/resume" className="btn">

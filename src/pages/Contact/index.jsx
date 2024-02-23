@@ -56,7 +56,7 @@ export default function Contact() {
               Your name
             </label>
             {name ? (
-              <p className="errMsg">Name should have more then 3 letters</p>
+              <p className="errMsg">Name should have more than 3 letters</p>
             ) : (
               <></>
             )}
